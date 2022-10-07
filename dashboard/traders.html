@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="Description" content="Digital assets trading and investments platform" />
+  <meta name="Author" content="Mirror Trading Inc" />
+  <meta name="Keywords"
+    content="Mining, Trading, Investment " />
+
+  <!-- Title -->
+  <title>Expert Traders - Mirror Trading</title>
+
+  <!-- Bootstrap css -->
+  <link id="style" href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/brand/favicon.png" type="image/x-icon" />
+
+  <!-- Icons css -->
+  <link href="assets/css/icons.css" rel="stylesheet" />
+
+  <!--  Animations css -->
+  <link href="assets/css/animate.css" rel="stylesheet" />
+
+  <!-- style css-->
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+  <!-- plugin css-->
+  <link href="assets/css/plugins.css" rel="stylesheet" />
+</head>
+
+<body class="ltr main-body app sidebar-mini light-mode">
+  <!-- Loader -->
+  <div id="global-loader" class="light-loader">
+    <img src="assets/img/loaders/loader.svg" class="loader-img" alt="Loader" />
+  </div>
+  <!-- /Loader -->
+
+  <!-- Page -->
+  <div class="page">
+    <!-- main-header -->
+    <div class="main-header sticky side-header nav nav-item">
+      <div class="container-fluid main-container">
+        <div class="responsive-logo">
+          <a href="index.html" class="mobile-light"><img src="assets/img/brand/logo.png" class="mobile-logo" alt="logo" /></a>
+          <a href="index.html" class="mobile-dark"><img src="assets/img/brand/logo-white.png" class="mobile-logo" alt="logo" /></a>
+        </div>
+        <div class="main-header-left">
+          <div class="app-sidebar__toggle mobile-toggle" data-bs-toggle="sidebar">
+            <a class="open-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-menu-outline header-icons">
+                <g data-name="Layer 2">
+                  <g data-name="menu">
+                    <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect>
+                    <rect x="3" y="11" width="18" height="2" rx=".95" ry=".95"></rect>
+                    <rect x="3" y="16" width="18" height="2" rx=".95" ry=".95"></rect>
+                    <rect x="3" y="6" width="18" height="2" rx=".95" ry=".95"></rect>
+                  </g>
+                </g>
+              </svg></a>
+            <a class="close-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-close-outline header-icons">
+                <g data-name="Layer 2">
+                  <g data-name="close">
+                    <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect>
+                    <path d="M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path>
+                  </g>
+                </g>
+              </svg></a>
+          </div>
+        </div>
+        <div class="d-flex order-lg-2 ms-auto">
+          <button class="navbar-toggler navresponsive-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon fe fe-more-vertical"></span>
+          </button>
+          <div class="responsive main-header">
+            <div class="navbar navbar-expand-lg nav nav-item navbar-nav-right responsive-navbar navbar-dark">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+                <div class="d-flex order-lg-2">
+                  <div class="nav-item theme-layout d-none d-sm-block">
+                    <a class="new nav-link" href="#">
+                      <span class="dark-layout"><i class="fe fe-moon"></i></span>
+                      <span class="light-layout"><i class="fe fe-sun"></i></span>
+                    </a>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /main-header -->
+
+    <!-- main-sidebar opened -->
+    <div class="sticky">
+      <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
+      <aside class="app-sidebar">
+        <div class="main-sidebar-header">
+          <a class="desktop-logo logo-light" href="index.html"><img src="assets/img/brand/logo.png" class="" alt="logo" /></a>
+          <a class="desktop-logo logo-dark" href="index.html"><img src="assets/img/brand/logo-white.png" class="" alt="logo" /></a>
+          <a class="logo-icon mobile-logo icon-light" href="index.html"><img src="assets/img/brand/favicon.png" class="" alt="logo" /></a>
+          <a class="logo-icon mobile-logo icon-dark" href="index.html"><img src="assets/img/brand/favicon-white.png" class="" alt="logo" /></a>
+        </div>
+        <div class="main-sidemenu">
+          <div class="main-sidebar-body circle-animation">
+            <div class="slide-left disabled" id="slide-left">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#d6deea" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" />
+              </svg>
+            </div>
+            <ul class="side-menu circle">
+              <li>
+                <h3 class="">Dashboard</h3>
+              </li>
+              <li class="slide">
+                <a class="side-menu__item" href="index.html"><i class="side-menu__icon fa fa-bars"></i><span class="side-menu__label">Dashboard</span></a>
+              </li>
+
+              <li class="slide">
+                <a class="side-menu__item" href="market.html"><i class="side-menu__icon fa fa-store"></i><span class="side-menu__label">Markets</span></a>
+              </li>
+              <li class="slide">
+                <a class="side-menu__item" href="trading.html"><i class="side-menu__icon fa fa-coins"></i><span class="side-menu__label">Trading</span></a>
+              </li>
+
+              <li class="slide">
+                <a class="side-menu__item" href="mining.html"><i class="side-menu__icon fa fa-meteor menu-icon"></i><span class="side-menu__label">Mining</span></a>
+              </li>
+
+              <li class="slide">
+                <a class="side-menu__item" href="pricing-plans.html"><i class="side-menu__icon fa fa-list-ul menu-icon"></i><span class="side-menu__label">Plans</span></a>
+              </li>
+
+              <li class="slide">
+                <a class="side-menu__item" href="invest.html"><i class="side-menu__icon fa fa-credit-card menu-icon"></i><span class="side-menu__label">Invest</span></a>
+              </li>
+
+              <li class="slide">
+                <a class="side-menu__item" href="withdraw.html"><i class="side-menu__icon fa fa-wallet menu-icon"></i><span class="side-menu__label">Withdraw</span></a>
+              </li>
+
+              <li class="slide">
+                <a class="side-menu__item" href="referral.html"><i class="side-menu__icon fa fa-users"></i><span class="side-menu__label">Referrals</span></a>
+              </li>
+
+              <li class="slide">
+                <a class="side-menu__item" href="account.html"><i class="side-menu__icon fa fa-user"></i><span class="side-menu__label">Account</span></a>
+              </li>
+
+              <li class="slide">
+                <a class="side-menu__item" href="#"><i class="side-menu__icon fa fa-headset"></i><span class="side-menu__label">Contact Support</span></a>
+              </li>
+            </ul>
+            <div class="slide-right" id="slide-right">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#d6deea" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <!-- main-sidebar -->
+
+    <!-- main-content -->
+    <div class="main-content app-content">
+      <!-- container -->
+      <div class="main-container container-fluid">
+        <!-- breadcrumb -->
+        <div class="breadcrumb-header justify-content-between">
+          <div class="left-content">
+            <h3 class="content-title mb-2">Welcome,</h3>
+            <div class="d-flex p-0">
+              <i class="mdi mdi-home text-muted hover-cursor"></i>
+              <p class="text-muted mb-0 hover-cursor">
+                &nbsp;/&nbsp;Dashboard&nbsp;/&nbsp;
+              </p>
+              <p class="text-primary mb-0 hover-cursor">Expert Traders Investment</p>
+            </div>
+          </div>
+        </div>
+        <!-- /breadcrumb -->
+
+        <!-- row  -->
+
+        <!-- /row -->
+
+        <!-- row -->
+
+
+
+          <!-- row -->
+          <div class="row">
+            <div class="col-sm-12 col-lg-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <div class="profile-pic mb-3">
+                    <img src="assets/img/faces/5.jpg" class="brround avatar avatar-lg mx-auto"
+                      alt="user">
+                    <h5 class="mt-3 mb-0 font-weight-semibold tx-18">Tobias Hagen</h5>
+                    <p class="text-grey-light my-text-mg-up">2 Losses</p>
+                    <p class="text-grey-light my-tx-mg-neg">97% Win Rate</p>
+                    <p class="text-grey-light my-tx-mg-neg">10% Profit Share</p>
+                  </div>
+                  <div class="chip">Stocks</div>
+                  <div class="chip">Crypto</div>
+                  <div class="chip bg-primary text-white">97%</div>
+                </div>
+                <div class="p-4 b-t card-footer">
+                  <div class="row text-center">
+                    <div class="col-12 text-center">
+                      <div class="text-center">
+                        <a href="trading-investment.html" class="btn btn-outline-primary">Copy Trader</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <div class="profile-pic mb-3">
+                    <img src="assets/img/faces/5.jpg" class="brround avatar avatar-lg mx-auto"
+                      alt="user">
+                    <h5 class="mt-3 mb-0 font-weight-semibold tx-18">Logan Connely</h5>
+                    <p class="text-grey-light my-text-mg-up">3 Losses</p>
+                    <p class="text-grey-light my-tx-mg-neg">95% Win Rate</p>
+                    <p class="text-grey-light my-tx-mg-neg">10% Profit Share</p>
+                  </div>
+                  <div class="chip">Stocks</div>
+                  <div class="chip">Crypto</div>
+                  <div class="chip bg-primary text-white">95%</div>
+                </div>
+                <div class="p-4 b-t card-footer">
+                  <div class="row text-center">
+                    <div class="col-12 text-center">
+                      <div class="text-center">
+                        <a href="trading-investment.html" class="btn btn-outline-primary">Copy Trader</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <div class="profile-pic mb-3">
+                    <img src="assets/img/faces/5.jpg" class="brround avatar avatar-lg mx-auto"
+                      alt="user">
+                    <h5 class="mt-3 mb-0 font-weight-semibold tx-18">Szczepan Piotrowski</h5>
+                    <p class="text-grey-light my-text-mg-up">3 Losses</p>
+                    <p class="text-grey-light my-tx-mg-neg">95% Win Rate</p>
+                    <p class="text-grey-light my-tx-mg-neg">10% Profit Share</p>
+                  </div>
+                  <div class="chip">Stocks</div>
+                  <div class="chip">Crypto</div>
+                  <div class="chip bg-primary text-white">95%</div>
+                </div>
+                <div class="p-4 b-t card-footer">
+                  <div class="row text-center">
+                    <div class="col-12 text-center">
+                      <div class="text-center">
+                        <a href="trading-investment.html" class="btn btn-outline-primary">Copy Trader</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- row -->
+
+          <!-- row -->
+          <div class="row">
+            <div class="col-sm-12 col-lg-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <div class="profile-pic mb-3">
+                    <img src="assets/img/faces/5.jpg" class="brround avatar avatar-lg mx-auto"
+                      alt="user">
+                    <h5 class="mt-3 mb-0 font-weight-semibold tx-18">Max Huie</h5>
+                    <p class="text-grey-light my-text-mg-up">3 Losses</p>
+                    <p class="text-grey-light my-tx-mg-neg">95% Win Rate</p>
+                    <p class="text-grey-light my-tx-mg-neg">10% Profit Share</p>
+                  </div>
+                  <div class="chip">Forex</div>
+                  <div class="chip">Crypto</div>
+                  <div class="chip bg-primary text-white">95%</div>
+                </div>
+                <div class="p-4 b-t card-footer">
+                  <div class="row text-center">
+                    <div class="col-12 text-center">
+                      <div class="text-center">
+                        <a href="trading-investment.html" class="btn btn-outline-primary">Copy Trader</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <div class="profile-pic mb-3">
+                    <img src="assets/img/faces/5.jpg" class="brround avatar avatar-lg mx-auto"
+                      alt="user">
+                    <h5 class="mt-3 mb-0 font-weight-semibold tx-18">Deloris R. Bussey</h5>
+                    <p class="text-grey-light my-text-mg-up">3 Losses</p>
+                    <p class="text-grey-light my-tx-mg-neg">95% Win Rate</p>
+                    <p class="text-grey-light my-tx-mg-neg">10% Profit Share</p>
+                  </div>
+                  <div class="chip">Stocks</div>
+                  <div class="chip">Forex</div>
+                  <div class="chip bg-primary text-white">95%</div>
+                </div>
+                <div class="p-4 b-t card-footer">
+                  <div class="row text-center">
+                    <div class="col-12 text-center">
+                      <div class="text-center">
+                        <a href="trading-investment.html" class="btn btn-outline-primary">Copy Trader</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <div class="profile-pic mb-3">
+                    <img src="assets/img/faces/5.jpg" class="brround avatar avatar-lg mx-auto"
+                      alt="user">
+                    <h5 class="mt-3 mb-0 font-weight-semibold tx-18">Jeanne J. Thornton</h5>
+                    <p class="text-grey-light my-text-mg-up">4 Losses</p>
+                    <p class="text-grey-light my-tx-mg-neg">93% Win Rate</p>
+                    <p class="text-grey-light my-tx-mg-neg">10% Profit Share</p>
+                  </div>
+                  <div class="chip">Stocks</div>
+                  <div class="chip">Crypto</div>
+                  <div class="chip bg-primary text-white">93%</div>
+                </div>
+                <div class="p-4 b-t card-footer">
+                  <div class="row text-center">
+                    <div class="col-12 text-center">
+                      <div class="text-center">
+                        <a href="trading-investment.html" class="btn btn-outline-primary">Copy Trader</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- row -->
+
+          <!-- row -->
+          <div class="row">
+            <div class="col-sm-12 col-lg-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <div class="profile-pic mb-3">
+                    <img src="assets/img/faces/5.jpg" class="brround avatar avatar-lg mx-auto"
+                      alt="user">
+                    <h5 class="mt-3 mb-0 font-weight-semibold tx-18">Nicholas K. Sanders</h5>
+                    <p class="text-grey-light my-text-mg-up">4 Losses</p>
+                    <p class="text-grey-light my-tx-mg-neg">93% Win Rate</p>
+                    <p class="text-grey-light my-tx-mg-neg">10% Profit Share</p>
+                  </div>
+                  <div class="chip">Forex</div>
+                  <div class="chip">Crypto</div>
+                  <div class="chip bg-primary text-white">93%</div>
+                </div>
+                <div class="p-4 b-t card-footer">
+                  <div class="row text-center">
+                    <div class="col-12 text-center">
+                      <div class="text-center">
+                        <a href="trading-investment.html" class="btn btn-outline-primary">Copy Trader</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <div class="profile-pic mb-3">
+                    <img src="assets/img/faces/5.jpg" class="brround avatar avatar-lg mx-auto"
+                      alt="user">
+                    <h5 class="mt-3 mb-0 font-weight-semibold tx-18">Herman Baker</h5>
+                    <p class="text-grey-light my-text-mg-up">4 Losses</p>
+                    <p class="text-grey-light my-tx-mg-neg">93% Win Rate</p>
+                    <p class="text-grey-light my-tx-mg-neg">10% Profit Share</p>
+                  </div>
+                  <div class="chip">Options</div>
+                  <div class="chip">Crypto</div>
+                  <div class="chip bg-primary text-white">93%</div>
+                </div>
+                <div class="p-4 b-t card-footer">
+                  <div class="row text-center">
+                    <div class="col-12 text-center">
+                      <div class="text-center">
+                        <a href="trading-investment.html" class="btn btn-outline-primary">Copy Trader</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <div class="profile-pic mb-3">
+                    <img src="assets/img/faces/5.jpg" class="brround avatar avatar-lg mx-auto"
+                      alt="user">
+                    <h5 class="mt-3 mb-0 font-weight-semibold tx-18">Michael A. Cohen</h5>
+                    <p class="text-grey-light my-text-mg-up">4 Losses</p>
+                    <p class="text-grey-light my-tx-mg-neg">93% Win Rate</p>
+                    <p class="text-grey-light my-tx-mg-neg">10% Profit Share</p>
+                  </div>
+                  <div class="chip">Bonds</div>
+                  <div class="chip">Crypto</div>
+                  <div class="chip bg-primary text-white">93%</div>
+                </div>
+                <div class="p-4 b-t card-footer">
+                  <div class="row text-center">
+                    <div class="col-12 text-center">
+                      <div class="text-center">
+                        <a href="trading-investment.html" class="btn btn-outline-primary">Copy Trader</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- row -->
+
+
+        <!-- /row  -->
+      </div>
+      <!-- /conatiner -->
+    </div>
+    <!-- /main-content -->
+
+    <!-- Footer opened -->
+    <div class="main-footer">
+      <div class="container-fluid ht-100p">
+        <span>Copyright © 2015 <a href="#">Mirror Trading</a> All rights
+          reserved.</span>
+      </div>
+    </div>
+    <!-- Footer closed -->
+  </div>
+  <!--end  Page -->
+
+  <!-- Back-to-top -->
+  <a href="#top" id="back-to-top"><i class="la la-chevron-up"></i></a>
+
+  <!-- JQuery min js -->
+  <script src="assets/plugins/jquery/jquery.min.js"></script>
+
+  <!-- Bootstrap Bundle js -->
+  <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
+  <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Datepicker js -->
+  <script src="assets/plugins/jquery-ui/ui/widgets/datepicker.js"></script>
+
+  <!-- Moment js -->
+  <script src="assets/plugins/moment/moment.js"></script>
+
+  <!--Chart bundle min js -->
+  <script src="assets/plugins/chart.js/Chart.bundle.min.js"></script>
+  <script src="assets/plugins/raphael/raphael.min.js"></script>
+  <script src="assets/plugins/peity/jquery.peity.min.js"></script>
+
+  <!-- JQuery sparkline js -->
+  <script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+  <!-- Sampledata js -->
+  <script src="assets/js/chart.flot.sampledata.js"></script>
+
+  <!-- Perfect-scrollbar js -->
+  <script src="assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script src="assets/plugins/perfect-scrollbar/p-scroll.js"></script>
+  <script src="assets/plugins/perfect-scrollbar/p-scroll-1.js"></script>
+
+  <!-- Internal  Flot js-->
+  <script src="assets/plugins/jquery.flot/jquery.flot.js"></script>
+  <script src="assets/plugins/jquery.flot/jquery.flot.pie.js"></script>
+  <script src="assets/plugins/jquery.flot/jquery.flot.categories.js"></script>
+  <script src="assets/plugins/jquery.flot/jquery.flot.resize.js"></script>
+  <script src="assets/js/dashboard.sampledata.js"></script>
+  <script src="assets/js/chart.flot.sampledata.js"></script>
+
+  <!-- Owl Carousel js-->
+  <script src="assets/plugins/owl-carousel/owl.carousel.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+
+  <!-- Eva-icons js -->
+  <script src="assets/js/eva-icons.min.js"></script>
+
+  <!-- Sidemenu js -->
+  <script src="assets/plugins/side-menu/sidemenu.js"></script>
+
+  <!-- right-sidebar js -->
+  <script src="assets/plugins/sidebar/sidebar.js"></script>
+  <script src="assets/plugins/sidebar/sidebar-custom.js"></script>
+
+  <!-- Internal Nice-select js-->
+  <script src="assets/plugins/jquery-nice-select/js/jquery.nice-select.js"></script>
+  <script src="assets/plugins/jquery-nice-select/js/nice-select.js"></script>
+
+  <!-- Sticky js -->
+  <script src="assets/js/sticky.js"></script>
+
+  <!-- index js -->
+  <script src="assets/js/dashboard.js"></script>
+
+  <!-- Color Theme js -->
+  <script src="assets/js/themeColors.js"></script>
+
+  <!-- custom js -->
+  <script src="assets/js/custom.js"></script>
+
+  <!-- Custom-switcher js -->
+  <script src="assets/js/custom-switcher.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,541 @@
+.tooltip {
+	position: absolute;
+	z-index: 99999;
+	display: block;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.5;
+	text-align: left;
+	text-align: start;
+	text-decoration: none;
+	text-shadow: none;
+	text-transform: none;
+	letter-spacing: normal;
+	word-break: normal;
+	word-spacing: normal;
+	white-space: normal;
+	line-break: auto;
+	font-size: 0.76562rem;
+	word-wrap: break-word;
+	opacity: 0;
+  
+	&.show {
+	  opacity: 0.9;
+	}
+  
+	.tooltip-arrow {
+	  position: absolute;
+	  display: block;
+	  width: 0.8rem;
+	  height: 0.4rem;
+  
+	  &::before {
+		position: absolute;
+		content: "";
+		border-color: transparent;
+		border-style: solid;
+	  }
+	}
+  }
+  
+  .bs-tooltip-top, .bs-tooltip-auto[data-popper-placement^="top"] {
+	padding: 0.4rem 0;
+  }
+  
+  .bs-tooltip-top .tooltip-arrow, .bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow {
+	bottom: 0;
+	left: 50%;
+    margin-left: -2px;
+  }
+  
+  .bs-tooltip-top .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before {
+	top: -1px;
+	border-width: 0.4rem 0.4rem 0;
+	border-top-color: $black;
+  }
+  
+  .bs-tooltip-end, .bs-tooltip-auto[data-popper-placement^="right"] {
+	padding: 0 0.4rem;
+  }
+  
+  .bs-tooltip-end .tooltip-arrow, .bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow {
+	left: 0;
+	width: 0.4rem;
+	height: 0.8rem;
+	top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+	
+  }
+  
+  .bs-tooltip-end .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before {
+	right: 0;
+	border-width: 0.4rem 0.4rem 0.4rem 0;
+	border-right-color: $black;
+  }
+  
+  .bs-tooltip-bottom, .bs-tooltip-auto[data-popper-placement^="bottom"] {
+	padding: 0.4rem 0;
+  }
+  
+  .bs-tooltip-bottom .tooltip-arrow, .bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow {
+	top: 0;
+	left: 50%;
+    margin-left: 2px;
+  }
+  
+  .bs-tooltip-bottom .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before {
+	bottom: 0;
+	border-width: 0 0.4rem 0.4rem;
+	border-bottom-color: $black;
+  }
+  
+  .bs-tooltip-start, .bs-tooltip-auto[data-popper-placement^="left"] {
+	padding: 0 0.4rem;
+  }
+  
+  .bs-tooltip-start .tooltip-arrow, .bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow {
+	right: 0;
+	width: 0.4rem;
+	height: 0.8rem;
+	top:50%;
+	bottom: 50%;
+	transform: translateY(-50%);
+  }
+  
+  .bs-tooltip-start .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before {
+	left: -1px;
+	border-width: 0.4rem 0 0.4rem 0.4rem;
+	border-left-color: $black;
+  }
+  
+  .tooltip-inner {
+	max-width: 200px;
+	padding: 0.25rem 0.5rem;
+	color: $white;
+	text-align: center;
+	background-color: $black;
+	border-radius: 3px;
+    line-height: 1.8;
+  }
+  
+  /* ###### 3.15 Tooltip ###### */
+  
+  .tooltip {
+	top: 0;
+  }
+  
+  .tooltip-inner {
+	font-size: 12px;
+	border-radius: 2px;
+  }
+  
+  .tooltip-primary {
+	.tooltip-inner {
+	  background-color: $primary;
+	  color: $white;
+	}
+  
+	&.bs-tooltip-top .tooltip-arrow::before, &.bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before {
+	  border-top-color: $primary;
+	}
+  
+	&.bs-tooltip-bottom .tooltip-arrow::before, &.bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before {
+	  border-bottom-color: $primary;
+	}
+  
+	&.bs-tooltip-start .tooltip-arrow::before, &.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before {
+	  border-left-color: $primary;
+	}
+  
+	&.bs-tooltip-end .tooltip-arrow::before, &.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before {
+	  border-right-color: $primary;
+	}
+  }
+  
+  .tooltip-secondary {
+	.tooltip-inner {
+	  background-color: $primary;
+	  color: $white;
+	}
+  
+	&.bs-tooltip-top .tooltip-arrow::before, &.bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before {
+	  border-top-color: $primary;
+	}
+  
+	&.bs-tooltip-bottom .tooltip-arrow::before, &.bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before {
+	  border-bottom-color: $primary;
+	}
+  
+	&.bs-tooltip-start .tooltip-arrow::before, &.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before {
+	  border-left-color: $primary;
+	}
+  
+	&.bs-tooltip-end .tooltip-arrow::before, &.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before {
+	  border-right-color: $primary;
+	}
+  }
+  
+  .popover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	display: block;
+	max-width: 276px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.5;
+	text-align: left;
+	text-align: start;
+	text-decoration: none;
+	text-shadow: none;
+	text-transform: none;
+	letter-spacing: normal;
+	word-break: normal;
+	word-spacing: normal;
+	white-space: normal;
+	line-break: auto;
+	font-size: 0.76562rem;
+	word-wrap: break-word;
+	background-color: $white;
+	background-clip: padding-box;
+	border: 1px solid $black-1;
+	border-radius: 0.3rem;
+  
+	.tooltip-arrow {
+	  position: absolute;
+	  display: block;
+	  width: 1rem;
+	  height: 0.5rem;
+	  margin: 0 0.3rem;
+  
+	  &::before, &::after {
+		position: absolute;
+		display: block;
+		content: "";
+		border-color: transparent;
+		border-style: solid;
+	  }
+	}
+  }
+  
+  .bs-popover-top, .bs-popover-auto[data-popper-placement^="top"] {
+	margin-bottom: 0.5rem;
+  }
+  
+  .bs-popover-top > .tooltip-arrow, .bs-popover-auto[data-popper-placement^="top"] > .tooltip-arrow {
+	bottom: calc((0.5rem + 1px) * -1);
+	right:50%;
+	left:50%;
+	transform: translateX(-50%);
+  }
+  
+  .bs-popover-top > .tooltip-arrow::before, .bs-popover-auto[data-popper-placement^="top"] > .tooltip-arrow::before {
+	bottom: 1px;
+	border-width: 0.5rem 0.5rem 0;
+	border-top-color: rgba(0, 0, 0, 0.25);
+  }
+  
+  .bs-popover-top > .tooltip-arrow::after, .bs-popover-auto[data-popper-placement^="top"] > .tooltip-arrow::after {
+	bottom: 1px;
+	border-width: 0.5rem 0.5rem 0;
+	border-top-color: $white;
+  }
+  
+  .bs-popover-end, .bs-popover-auto[data-popper-placement^="right"] {
+	margin-left: 0.5rem;
+  }
+  
+  .bs-popover-end > .tooltip-arrow, .bs-popover-auto[data-popper-placement^="right"] > .tooltip-arrow {
+	left: calc((0.5rem + 1px) * -1);
+	width: 0.5rem;
+	height: 1rem;
+	margin: 0.3rem 0;
+	top:50%;
+	right:50%;
+	transform: translateY(-50%);
+  }
+  
+  .bs-popover-end > .tooltip-arrow::before, .bs-popover-auto[data-popper-placement^="right"] > .tooltip-arrow::before {
+	left: 0;
+	border-width: 0.5rem 0.5rem 0.5rem 0;
+	border-right-color: rgba(0, 0, 0, 0.25);
+  }
+  
+  .bs-popover-end > .tooltip-arrow::after, .bs-popover-auto[data-popper-placement^="right"] > .tooltip-arrow::after {
+	left: 1px;
+	border-width: 0.5rem 0.5rem 0.5rem 0;
+	border-right-color: $white;
+  }
+  
+  .bs-popover-bottom, .bs-popover-auto[data-popper-placement^="bottom"] {
+	margin-top: 0.5rem;
+  }
+  
+  .bs-popover-bottom > .tooltip-arrow, .bs-popover-auto[data-popper-placement^="bottom"] > .tooltip-arrow {
+	top: calc((0.5rem + 1px) * -1);
+	right:50%;
+	left:50%;
+	transform: translateX(-50%);
+  }
+  
+  .bs-popover-bottom > .tooltip-arrow::before, .bs-popover-auto[data-popper-placement^="bottom"] > .tooltip-arrow::before {
+	top: 0;
+	border-width: 0 0.5rem 0.5rem 0.5rem;
+	border-bottom-color: rgba(0, 0, 0, 0.25);
+  }
+  
+  .bs-popover-bottom > .tooltip-arrow::after, .bs-popover-auto[data-popper-placement^="bottom"] > .tooltip-arrow::after {
+	top: 1px;
+	border-width: 0 0.5rem 0.5rem 0.5rem;
+	border-bottom-color: $white;
+  }
+  
+  .bs-popover-bottom .popover-header::before, .bs-popover-auto[data-popper-placement^="bottom"] .popover-header::before {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	display: block;
+	width: 1rem;
+	margin-left: -0.5rem;
+	content: "";
+	border-bottom: 1px solid #f7f7f7;
+  }
+  
+  .bs-popover-start, .bs-popover-auto[data-popper-placement^="left"] {
+	margin-right: 0.5rem;
+  }
+  
+  .bs-popover-start > .tooltip-arrow, .bs-popover-auto[data-popper-placement^="left"] > .tooltip-arrow {
+	right: calc((0.5rem + 1px) * -1);
+	width: 0.5rem;
+	height: 1rem;
+	margin: 0.3rem 0;
+	top:50%;
+	bottom: 50%;
+	transform: translateY(-50%);
+  }
+  
+  .bs-popover-start > .tooltip-arrow::before, .bs-popover-auto[data-popper-placement^="left"] > .tooltip-arrow::before {
+	right: 0;
+	border-width: 0.5rem 0 0.5rem 0.5rem;
+	border-left-color: rgba(0, 0, 0, 0.25);
+  }
+  
+  .bs-popover-start > .tooltip-arrow::after, .bs-popover-auto[data-popper-placement^="left"] > .tooltip-arrow::after {
+	right: 1px;
+	border-width: 0.5rem 0 0.5rem 0.5rem;
+	border-left-color: $white;
+  }
+  
+  .popover-header {
+	padding: 0.5rem 0.75rem;
+	margin-bottom: 0;
+	font-size: 0.875rem;
+	background-color: #f7f7f7;
+	border-bottom: 1px solid #ebebeb;
+	border-top-left-radius: calc(0.3rem - 1px);
+	border-top-right-radius: calc(0.3rem - 1px);
+  
+	&:empty {
+	  display: none;
+	}
+  }
+  
+  .popover-body {
+	padding: 0.5rem 0.75rem;
+	color: #031b4e;
+  }
+  
+  /* ###### 3.12 Popover ###### */
+  
+  .popover {
+	font-size: 12px;
+	padding: 0;
+	border-radius: 3px;
+  }
+  
+  .popover-header {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	color: $dark;
+	letter-spacing: 0.5px;
+	padding: 12px 15px;
+	background-color: $white;
+	border-color: rgba(28, 39, 60, 0.1);
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+  
+	&::before {
+	  display: none !important;
+	}
+  }
+  
+  .popover-body {
+	padding: 15px;
+  
+	p:last-child {
+	  margin-bottom: 0;
+	}
+  }
+  
+  .popover-head-primary {
+	.popover-header {
+	  color: $white;
+	  background-color: $primary !important;
+	}
+  
+	// &.bs-popover-top .tooltip-arrow, &.bs-popover-auto[data-popper-placement^="top"] .tooltip-arrow {
+	//   bottom: -7px;
+	// }
+  
+	&.bs-popover-start .tooltip-arrow, &.bs-popover-auto[data-popper-placement^="left"] .tooltip-arrow {
+	  right: -7px;
+	}
+  
+	&.bs-popover-end .tooltip-arrow, &.bs-popover-auto[data-popper-placement^="right"] .tooltip-arrow {
+	  left: -7px;
+	}
+  
+	&.bs-popover-bottom .tooltip-arrow::after, &.bs-popover-auto[data-popper-placement^="bottom"] .tooltip-arrow::after {
+	  border-bottom-color: $primary;
+	}
+  }
+  
+  .popover-head-secondary {
+	.popover-header {
+	  color: $white;
+	  background-color: $secondary !important;
+	}
+  
+	// &.bs-popover-top .tooltip-arrow, &.bs-popover-auto[data-popper-placement^="top"] .tooltip-arrow {
+	//   bottom: -7px;
+	// }
+  
+	&.bs-popover-start .tooltip-arrow, &.bs-popover-auto[data-popper-placement^="left"] .tooltip-arrow {
+	  right: -7px;
+	}
+  
+	&.bs-popover-end .tooltip-arrow, &.bs-popover-auto[data-popper-placement^="right"] .tooltip-arrow {
+	  left: -7px;
+	}
+  
+	&.bs-popover-bottom .tooltip-arrow::after, &.bs-popover-auto[data-popper-placement^="bottom"] .tooltip-arrow::after {
+	  border-bottom-color: $secondary;
+	}
+  }
+  
+  .popover-head-primary, .popover-head-secondary {
+	.popover-header {
+	  border: 0;
+	}
+  }
+  
+  .popover-head-primary .popover-body, .popover-head-secondary .popover-body {
+	border-top-width: 0;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+  }
+  
+  .popover-head-primary {
+	&.bs-popover-bottom .tooltip-arrow::before, &.bs-popover-auto[data-popper-placement^="bottom"] .tooltip-arrow::before {
+	  display: none;
+	}
+  }
+  
+  .popover-head-secondary {
+	&.bs-popover-bottom .tooltip-arrow::before, &.bs-popover-auto[data-popper-placement^="bottom"] .tooltip-arrow::before {
+	  display: none;
+	}
+  }
+  
+  .popover-primary {
+	background-color: $primary !important;
+	border-width: 0;
+	padding: 15px;
+  
+	.popover-header {
+	  background-color: transparent !important;
+	  border-bottom-width: 0;
+	  padding: 0 0 15px;
+	  color: $white;
+	}
+  
+	.popover-body {
+	  padding: 0;
+	  color: rgba(255, 255, 255, 0.75);
+	}
+  
+	.tooltip-arrow::before {
+	  display: none;
+	}
+  
+	&.bs-popover-top .tooltip-arrow::after, &.bs-popover-auto[data-popper-placement^="top"] .tooltip-arrow::after {
+	  border-top-color: $primary !important;
+	}
+  
+	&.bs-popover-bottom .tooltip-arrow::after, &.bs-popover-auto[data-popper-placement^="bottom"] .tooltip-arrow::after {
+	  border-bottom-color: $primary !important;
+	}
+  
+	&.bs-popover-start .tooltip-arrow::after, &.bs-popover-auto[data-popper-placement^="left"] .tooltip-arrow::after {
+	  border-left-color: $primary !important;
+	}
+  
+	&.bs-popover-end .tooltip-arrow::after, &.bs-popover-auto[data-popper-placement^="right"] .tooltip-arrow::after {
+	  border-right-color: $primary !important;
+	}
+  }
+  
+  .popover-secondary {
+	background-color: $secondary !important;
+	border-width: 0;
+	padding: 15px;
+  
+	.popover-header {
+	  background-color: transparent !important;
+	  border-bottom-width: 0;
+	  padding: 0 0 15px;
+	  color: $white;
+	}
+  
+	.popover-body {
+	  padding: 0;
+	  color: rgba(255, 255, 255, 0.75);
+	}
+  
+	.tooltip-arrow::before {
+	  display: none;
+	}
+  
+	&.bs-popover-top .tooltip-arrow::after, &.bs-popover-auto[data-popper-placement^="top"] .tooltip-arrow::after {
+	  border-top-color: $secondary !important;
+	}
+   
+	&.bs-popover-bottom .tooltip-arrow::after, &.bs-popover-auto[data-popper-placement^="bottom"] .tooltip-arrow::after {
+	  border-bottom-color: $secondary !important;
+	}
+  
+	&.bs-popover-start .tooltip-arrow::after, &.bs-popover-auto[data-popper-placement^="left"] .tooltip-arrow::after {
+	  border-left-color: $secondary !important;
+	}
+  
+	&.bs-popover-end .tooltip-arrow::after, &.bs-popover-auto[data-popper-placement^="right"] .tooltip-arrow::after {
+	  border-right-color: $secondary !important;
+	}
+  }
+  .bs-popover-auto[data-popper-placement^=top]>.popover-arrow::before, .bs-popover-top>.popover-arrow::before {
+    bottom: 1px;
+    border-width: 0.5rem 0.5rem 0;
+    border-top-color: rgba(0,0,0,.25);
+}
+.bs-popover-auto[data-popper-placement^=top]>.popover-arrow::after, .bs-popover-top>.popover-arrow::after {
+    bottom: 1px;
+    border-width: 0.5rem 0.5rem 0;
+    border-top-color: $white;
+}

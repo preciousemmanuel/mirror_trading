@@ -1,0 +1,12 @@
+:root {
+  --thm-font: "Barlow", sans-serif;
+  --thm-b-font: "Barlow", sans-serif;
+  --thm-black: #2a2833;
+  --thm-black-rgb: 42, 40, 51;
+  --thm-text: #74727a;
+  --thm-base: #ff4b82;
+}
+
+.scroll-to-top {
+  color: #fff;
+}

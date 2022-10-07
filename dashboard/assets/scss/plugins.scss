@@ -1,0 +1,120 @@
+/*------------------------------------------------------------------
+
+Project        :   Xino - HTML5 Bootstrap Admin Template
+Version        :   V.1
+Updated Date   :   15/Jun/2022
+Copyright      :   Spruko Technologies Private Limited 
+Author         :   Spruko
+Author URL     :   https://themeforest.net/user/spruko
+Support	       :   support@spruko.com
+License        :   Licensed under ThemeForest License
+
+-------------------------------------------------------------------*/
+
+/*
+
+1. amazeui.datetimepicker
+2. bootstrap-datepicker
+3. buttons.bootstrap5.min
+4. dataTables.bootstrap5
+5. responsive.bootstrap5
+6. jquery-ui-draggable
+7. fancy_fileupload
+8. fileupload
+9. smart_wizard
+10. smart_wizard_theme_arrows
+11. smart_wizard_theme_dots
+12. smart_wizard_theme_circles.scss
+13. fullcalendar
+14. gallery
+15. twentytwenty
+16. inputtags
+17. ion.rangeSlider
+18. ion.rangeSlider.skinFlat
+19. countdown
+20. nice-select
+21. jquery.simple-dtpicker
+22. jquery.transfer
+23. leaflet
+24. morris
+25. multi.min
+26. multiple-select
+27. multislider
+28. jquery.jConveyorTicker
+29.notifIt
+30. owl.carousel
+31. perfect-scrollbar
+32. picker.min
+33. classic.min
+34. monolith.min
+35. nano.min
+36. prism
+37. quill.bubble
+38. quill.snow
+39. star-rating-svg
+40. select2.min
+41. sidebar
+42. sp-dark
+43. spectrum
+44. summernote1
+45. sumoselect
+46. sweetalert
+47. telephoneinput
+48. timeline.min
+49. treeview
+50. richtext
+
+*/
+
+/* ###### Plugins ####### */
+@import "variables";
+@import "plugins/amazeui-datetimepicker/amazeui.datetimepicker";
+@import "plugins/bootstrap-datepicker/bootstrap-datepicker";
+@import "plugins/datatable/buttons.bootstrap5.min";
+@import "plugins/datatable/dataTables.bootstrap5";
+@import "plugins/datatable/responsive.bootstrap5";
+@import "plugins/draggable/jquery-ui-draggable";
+@import "plugins/fancyuploder/fancy_fileupload";
+@import "plugins/fileuploads/fileupload";
+@import "plugins/formwizard/smart_wizard";
+@import "plugins/formwizard/smart_wizard_theme_arrows";
+@import "plugins/formwizard/smart_wizard_theme_dots";
+@import "plugins/formwizard/smart_wizard_theme_circles.scss";
+@import "plugins/fullcalendar/fullcalendar";
+@import "plugins/gallery/gallery";
+@import "plugins/images-comparsion/twentytwenty";
+@import "plugins/inputtags/inputtags";
+@import "plugins/ion-rangeslider/ion.rangeSlider";
+@import "plugins/ion-rangeslider/ion.rangeSlider.skinFlat";
+@import "plugins/jquery-countdown/countdown";
+@import "plugins/jquery-nice-select/nice-select";
+@import "plugins/jquery-simple-datetimepicker/jquery.simple-dtpicker";
+@import "plugins/jQuerytransfer/jquery.transfer";
+@import "plugins/leaflet/leaflet";
+@import "plugins/morris.js/morris";
+@import "plugins/multi/multi.min";
+@import "plugins/multipleselect/multiple-select";
+@import "plugins/multislider/multislider";
+@import "plugins/newsticker/jquery.jConveyorTicker";
+@import "plugins/notify/notifIt";
+@import "plugins/owl-carousel/owl.carousel";
+@import "plugins/perfect-scrollbar/perfect-scrollbar";
+@import "plugins/pickerjs/picker.min";
+@import "plugins/pickr-master/classic.min";
+@import "plugins/pickr-master/monolith.min";
+@import "plugins/pickr-master/nano.min";
+@import "plugins/prism/prism";
+@import "plugins/quill/quill.bubble";
+@import "plugins/quill/quill.snow";
+@import "plugins/ratings-2/star-rating-svg";
+@import "plugins/select2/select2.min";
+@import "plugins/sidebar/sidebar";
+@import "plugins/spectrum-colorpicker/sp-dark";
+@import "plugins/spectrum-colorpicker/spectrum";
+@import "plugins/summernote/summernote1";
+@import "plugins/sumoselect/sumoselect";
+@import "plugins/sweet-alert/sweetalert";
+@import "plugins/telephoneinput/telephoneinput";
+@import "plugins/timeline/timeline.min";
+@import "plugins/treeview/treeview";
+@import "plugins/wysiwyag/richtext";

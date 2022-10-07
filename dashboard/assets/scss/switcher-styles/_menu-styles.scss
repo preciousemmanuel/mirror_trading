@@ -1,0 +1,377 @@
+// LIGHT MENU STYLES
+.light-menu {
+    .app-sidebar {
+        background: $white;
+        border-right: 1px solid $border;
+    }
+    .main-sidebar-header {
+        background: $white;
+        border-bottom: 1px solid $border;
+        border-right: 1px solid $border;
+    }
+    .side-menu__label,
+    .side-menu .side-menu__icon,
+    .slide.is-expanded a,
+    .app-sidebar .side-menu__item:hover .side-menu__label,
+    .slide-menu li a {
+        color: $default-color;
+    }
+    .slide-menu .slide-item:before {
+        border-color: #000;
+    }
+    .slide-item.active,
+    .slide-item:hover,
+    .slide-item:focus {
+        color: $primary !important;
+    }
+    .side-menu h3 {
+        color: #999ca7;
+    }
+    .desktop-logo.logo-light {
+        display: block;
+    }
+    .sub-slide.is-expanded .sub-side-menu__item{
+        color: $default-color;
+    }
+    &.sidebar-mini.sidenav-toggled {
+        .main-sidebar-header {
+            .desktop-logo.logo-light,
+            .logo-icon.icon-dark {
+                display: none;
+            }
+            .logo-icon.icon-light {
+                display: block;
+            }
+        }
+        &.sidenav-toggled-open {
+            .main-sidebar-header {
+                .desktop-logo.logo-dark,
+                .logo-icon.icon-light {
+                    display: none;
+                }
+                .desktop-logo.logo-light {
+                    display: block;
+                }
+            }
+            .side-menu__label {
+                color: $default-color;
+            }
+        }
+    }
+    .slide:hover .side-menu__icon, .slide.is-expanded a:hover{
+        color: $primary !important;
+    }
+
+    .side-menu h3, .angle{
+        color: #999ca7 !important; 
+    }
+
+    @media (min-width: 992px){
+        &.app.sidenav-toggled .side-menu__label {
+            color: $default-color;
+        }
+        &.hover-submenu,  &.hover-submenu1{
+            &.sidebar-mini.sidenav-toggled{
+                .slide .slide-menu{
+                    background-color: $white;
+                }
+                &.sidenav-toggled-open{
+                    .slide .slide-menu{
+                        background-color: $white;
+                        border: 1px solid $border;
+                    }
+                    .main-sidebar-header{
+                        .desktop-logo.logo-light, .logo-icon.icon-dark{
+                            display: none;
+                        }
+                        .logo-icon.icon-light{
+                            display: block;
+                        }
+                    }
+                    .side-menu-label1{
+                        border-bottom-color: $border;
+                        a{
+                            color: $primary;
+                        }
+                    }
+                }
+            } 
+        }
+        &.horizontal.dark-mode{
+            .slide.is-expanded a,
+            .slide-menu li a {
+                color: $white-8;
+            }
+        } 
+    }
+}
+
+// COLOR MENU STYLES
+.color-menu {
+    .app-sidebar {
+        background: $primary;
+    }
+    .main-sidebar-header {
+        background: $primary;
+        border-bottom: 1px solid $white-2;
+        border-right: 1px solid $white-2;
+    }
+}
+
+// DARK MENU STYLES
+.dark-menu {
+    .app-sidebar {
+        background: $dark-theme;
+    }
+    .main-sidebar-header {
+        background: $dark-theme;
+        border-bottom: 1px solid $white-2;
+        border-right: 1px solid $white-2;
+    }
+    @media (min-width: 992px){
+        &.hover-submenu,  &.hover-submenu1{
+            &.sidebar-mini.sidenav-toggled{
+                .slide .slide-menu{
+                    background-color: #191f3a;
+                }
+            } 
+        }
+    }
+}
+
+//  MENU STYLE BG-IMG
+
+.sidebar-mini{
+    &.leftbgimage1 ,&.leftbgimage2, &.leftbgimage3, &.leftbgimage4, &.leftbgimage5 {
+        .app-sidebar {
+            &:before {
+                content: "";
+                position: fixed;
+                background: linear-gradient(135deg, $primary-09 0%, rgba(128, 66, 191, 0.9) 100%);
+                height: 100vh;
+                width: 240px;
+                z-index: -1;
+                transition: all ease 0.2s;
+            }
+        }
+    
+        @media (min-width: 992px) {
+            &.sidenav-toggled {
+                .app-sidebar {
+                    width: 80px !important;
+    
+                    &:before {
+                        width: 80px !important;
+                    }
+                }
+                &.icontext-menu,
+                &.hover-submenu,
+                &.hover-submenu1 {
+                    .app-sidebar {
+                        width: 110px !important;
+                        &:before {
+                            width: 110px !important;
+                        }
+                    }
+                }
+                &.sidenav-toggled-open {
+                    .app-sidebar {
+                        width: 240px !important;
+                        &:before {
+                            width: 240px !important;
+                        }
+                    }
+                    &.icontext-menu {
+                        .app-sidebar {
+                            width: 240px !important;
+                            &:before {
+                                width: 240px !important;
+                            }
+                        }
+                    }
+                    &.hover-submenu,
+                    &.hover-submenu1 {
+                        .app-sidebar {
+                            width: 110px !important;
+                            &:before {
+                                width: 110px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width: 992px){
+            &.scrollable-layout .app-sidebar {
+                &:before {
+                    position: absolute;
+                    height: 100%;
+                }
+                background-size: cover !important;
+                background-position: center !important;
+                background-repeat: no-repeat !important;
+                background-attachment: fixed !important;
+            }
+        }
+    }
+    &.leftbgimage1 {
+        .app-sidebar {
+            background: url(../img/media/bgimage1.jpg) !important;
+        }
+    }
+    &.leftbgimage2 {
+        .app-sidebar {
+            background: url(../img/media/bgimage2.jpg) !important;
+        }
+    }
+    &.leftbgimage3 {
+        .app-sidebar {
+            background: url(../img/media/bgimage3.jpg) !important;
+        }
+    }
+    &.leftbgimage4 {
+        .app-sidebar {
+            background: url(../img/media/bgimage4.jpg) !important;
+        }
+    }
+    &.leftbgimage5 {
+        .app-sidebar {
+            background: url(../img/media/bgimage5.jpg) !important;
+        }
+    }
+    &.light-menu {
+        &.leftbgimage1 ,&.leftbgimage2, &.leftbgimage3, &.leftbgimage4, &.leftbgimage5 {
+            .app-sidebar {
+                &:before {
+                    background: rgba(255, 255, 255, 0.88);
+                }
+            }
+        }
+    }
+    &.dark-menu {
+        &.leftbgimage1 ,&.leftbgimage2, &.leftbgimage3, &.leftbgimage4, &.leftbgimage5 {
+            .app-sidebar {
+                &:before {
+                    background: $dark-body;
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+    &.color-menu {
+        &.leftbgimage1 ,&.leftbgimage2, &.leftbgimage3, &.leftbgimage4, &.leftbgimage5 {
+            .app-sidebar {
+                &:before {
+                    background: $primary;
+                }
+            }
+        }
+    }
+}
+
+// COLOR MENU WITH BG-IMG
+.light-menu {
+    &.sidebar-mini {
+        &.leftbgimage1,
+        &.leftbgimage2,
+        &.leftbgimage3,
+        &.leftbgimage4,
+        &.leftbgimage5 {
+            &:before {
+                background: rgba(255, 255, 255, 0.88) !important;
+            }
+        }
+    }
+}
+
+// COLOR MENU WITH BG-IMG
+.color-menu {
+    &.sidebar-mini {
+        &.leftbgimage1,
+        &.leftbgimage2,
+        &.leftbgimage3,
+        &.leftbgimage4,
+        &.leftbgimage5 {
+            .app-sidebar {
+                background-size: cover;
+                height: 100vh;
+                width: 240px;
+                border-right: 1px solid transparent;
+                transition: all ease 0.2s;
+
+                &:before {
+                    content: "";
+                    position: fixed;
+                    background: $primary-09;
+                    height: 100vh;
+                    width: 240px;
+                    z-index: -1;
+                    transition: all ease 0.2s;
+                }
+            }
+
+            .side-menu li ul {
+                background: transparent;
+            }
+        }
+        &.leftbgimage1 {
+            .app-sidebar {
+                background: url(../img/media/bgimage1.jpg) !important;
+            }
+        }
+        &.leftbgimage2 {
+            .app-sidebar {
+                background: url(../img/media/bgimage2.jpg) !important;
+            }
+        }
+        &.leftbgimage3 {
+            .app-sidebar {
+                background: url(../img/media/bgimage3.jpg) !important;
+            }
+        }
+        &.leftbgimage4 {
+            .app-sidebar {
+                background: url(../img/media/bgimage4.jpg) !important;
+            }
+        }
+        &.leftbgimage5 {
+            .app-sidebar {
+                background: url(../img/media/bgimage5.jpg) !important;
+            }
+        }
+    }
+}
+
+// DARK MENU WITH BG-IMG
+.dark-menu {
+    &.sidebar-mini {
+        &.leftbgimage1,
+        &.leftbgimage2,
+        &.leftbgimage3,
+        &.leftbgimage4,
+        &.leftbgimage5 {
+            &:before {
+                background: rgba(43, 46, 57, 0.9);
+            }
+
+            .side-menu li ul {
+                background: rgba(58, 55, 57, 0);
+            }
+        }
+    }
+}
+
+// GRADIENT MENU WITH BG-IMG
+.gradient-menu {
+    &.sidebar-mini {
+        &.leftbgimage1,
+        &.leftbgimage2,
+        &.leftbgimage3,
+        &.leftbgimage4,
+        &.leftbgimage5 {
+            &:before {
+                background: linear-gradient(to top, $primary-09 0%, rgba(90, 101, 255, 0.9) 70%);
+            }
+        }
+    }
+}

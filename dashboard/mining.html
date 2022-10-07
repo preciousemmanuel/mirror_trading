@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="Description" content="Digital assets trading and investments platform" />
+  <meta name="Author" content="Mirror Trading Inc" />
+  <meta name="Keywords"
+    content="Mining, Trading, Investment " />
+
+  <!-- Title -->
+  <title>Mining - Mirror Trading</title>
+
+  <!-- Bootstrap css -->
+  <link id="style" href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/brand/favicon.png" type="image/x-icon" />
+
+  <!-- Icons css -->
+  <link href="assets/css/icons.css" rel="stylesheet" />
+
+  <!--  Animations css -->
+  <link href="assets/css/animate.css" rel="stylesheet" />
+
+  <!-- style css-->
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+  <!-- plugin css-->
+  <link href="assets/css/plugins.css" rel="stylesheet" />
+</head>
+
+<body class="ltr main-body app sidebar-mini light-mode">
+  <!-- Loader -->
+  <div id="global-loader" class="light-loader">
+    <img src="assets/img/loaders/loader.svg" class="loader-img" alt="Loader" />
+  </div>
+  <!-- /Loader -->
+
+  <!-- Page -->
+  <div class="page">
+    <!-- main-header -->
+    <div class="main-header sticky side-header nav nav-item">
+      <div class="container-fluid main-container">
+        <div class="responsive-logo">
+          <a href="index.html" class="mobile-light"><img src="assets/img/brand/logo.png" class="mobile-logo" alt="logo" /></a>
+          <a href="index.html" class="mobile-dark"><img src="assets/img/brand/logo-white.png" class="mobile-logo" alt="logo" /></a>
+        </div>
+        <div class="main-header-left">
+          <div class="app-sidebar__toggle mobile-toggle" data-bs-toggle="sidebar">
+            <a class="open-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-menu-outline header-icons">
+                <g data-name="Layer 2">
+                  <g data-name="menu">
+                    <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect>
+                    <rect x="3" y="11" width="18" height="2" rx=".95" ry=".95"></rect>
+                    <rect x="3" y="16" width="18" height="2" rx=".95" ry=".95"></rect>
+                    <rect x="3" y="6" width="18" height="2" rx=".95" ry=".95"></rect>
+                  </g>
+                </g>
+              </svg></a>
+            <a class="close-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-close-outline header-icons">
+                <g data-name="Layer 2">
+                  <g data-name="close">
+                    <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect>
+                    <path d="M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path>
+                  </g>
+                </g>
+              </svg></a>
+          </div>
+        </div>
+        <div class="d-flex order-lg-2 ms-auto">
+          <button class="navbar-toggler navresponsive-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon fe fe-more-vertical"></span>
+          </button>
+          <div class="responsive main-header">
+            <div class="navbar navbar-expand-lg nav nav-item navbar-nav-right responsive-navbar navbar-dark">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+                <div class="d-flex order-lg-2">
+                  <div class="nav-item theme-layout d-none d-sm-block">
+                    <a class="new nav-link" href="#">
+                      <span class="dark-layout"><i class="fe fe-moon"></i></span>
+                      <span class="light-layout"><i class="fe fe-sun"></i></span>
+                    </a>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /main-header -->
+
+    <!-- main-sidebar opened -->
+    <div class="sticky">
+      <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
+      <aside class="app-sidebar">
+        <div class="main-sidebar-header">
+          <a class="desktop-logo logo-light" href="index.html"><img src="assets/img/brand/logo.png" class="" alt="logo" /></a>
+          <a class="desktop-logo logo-dark" href="index.html"><img src="assets/img/brand/logo-white.png" class="" alt="logo" /></a>
+          <a class="logo-icon mobile-logo icon-light" href="index.html"><img src="assets/img/brand/favicon.png" class="" alt="logo" /></a>
+          <a class="logo-icon mobile-logo icon-dark" href="index.html"><img src="assets/img/brand/favicon-white.png" class="" alt="logo" /></a>
+        </div>
+        <div class="main-sidemenu">
+          <div class="main-sidebar-body circle-animation">
+            <div class="slide-left disabled" id="slide-left">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#d6deea" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" />
+              </svg>
+            </div>
+            <ul class="side-menu circle">
+              <li>
+                <h3 class="">Dashboard</h3>
+              </li>
+              <li class="slide">
+                <a class="side-menu__item" href="index.html"><i class="side-menu__icon fa fa-bars"></i><span class="side-menu__label">Dashboard</span></a>
+              </li>
+
+              <li class="slide">
+                <a class="side-menu__item" href="market.html"><i class="side-menu__icon fa fa-store"></i><span class="side-menu__label">Markets</span></a>
+              </li>
+              <li class="slide">
+                <a class="side-menu__item" href="trading.html"><i class="side-menu__icon fa fa-coins"></i><span class="side-menu__label">Trading</span></a>
+              </li>
+
+              <li class="slide">
+                <a class="side-menu__item" href="mining.html"><i class="side-menu__icon fa fa-meteor menu-icon"></i><span class="side-menu__label">Mining</span></a>
+              </li>
+
+              <li class="slide">
+                <a class="side-menu__item" href="pricing-plans.html"><i class="side-menu__icon fa fa-list-ul menu-icon"></i><span class="side-menu__label">Plans</span></a>
+              </li>
+
+              <li class="slide">
+                <a class="side-menu__item" href="invest.html"><i class="side-menu__icon fa fa-credit-card menu-icon"></i><span class="side-menu__label">Invest</span></a>
+              </li>
+
+              <li class="slide">
+                <a class="side-menu__item" href="withdraw.html"><i class="side-menu__icon fa fa-wallet menu-icon"></i><span class="side-menu__label">Withdraw</span></a>
+              </li>
+
+              <li class="slide">
+                <a class="side-menu__item" href="referral.html"><i class="side-menu__icon fa fa-users"></i><span class="side-menu__label">Referrals</span></a>
+              </li>
+
+              <li class="slide">
+                <a class="side-menu__item" href="account.html"><i class="side-menu__icon fa fa-user"></i><span class="side-menu__label">Account</span></a>
+              </li>
+
+              <li class="slide">
+                <a class="side-menu__item" href="#"><i class="side-menu__icon fa fa-headset"></i><span class="side-menu__label">Contact Support</span></a>
+              </li>
+            </ul>
+            <div class="slide-right" id="slide-right">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#d6deea" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <!-- main-sidebar -->
+
+    <!-- main-content -->
+    <div class="main-content app-content">
+      <!-- container -->
+      <div class="main-container container-fluid">
+        <!-- breadcrumb -->
+        <div class="breadcrumb-header justify-content-between">
+          <div class="left-content">
+            <h3 class="content-title mb-2">Welcome,</h3>
+            <div class="d-flex p-0">
+              <i class="mdi mdi-home text-muted hover-cursor"></i>
+              <p class="text-muted mb-0 hover-cursor">
+                &nbsp;/&nbsp;Dashboard&nbsp;/&nbsp;
+              </p>
+              <p class="text-primary mb-0 hover-cursor">Mining</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- /breadcrumb -->
+
+        <!-- row  -->
+
+        <!-- /row -->
+
+        <!-- row -->
+        <div class="row row-sm row-deck start-flexing ">
+          <div class="col-xl-4 col-lg-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="clearfix">
+                  <div class="float-end">
+                    <i class="mdi mdi-cube text-warning icon-size"></i>
+                  </div>
+                  <div class="float-start">
+                    <p class="mb-0 text-start">Total Mining Balance</p>
+                    <div class="">
+                      <h3 class="font-weight-semibold text-start mb-0 text-success">$89,876</h3>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-muted mb-0">
+                  <i class="mdi mdi-arrow-up-drop-circle me-1 text-success" aria-hidden="true"></i>
+                  80% higher growth
+                </p>
+              </div>
+              <div class="card-body">
+                <div class="btn-list btn-stretch">
+
+                  <a href="mining-investment.html" class="btn btn-outline-secondary stretch-grow">Invest</a>
+                  <a href="mining-withdrawal.html" class="btn btn-outline-success stretch-grow">Withdraw</a>
+
+                </div>
+
+
+
+							</div>
+              <div class="card-body">
+                <div class="btn-list btn-stretch">
+
+                  <a href="#my-contracts" class="btn btn-outline-warning stretch-grow">My Contracts</a>
+
+
+                </div>
+
+
+
+							</div>
+
+
+
+
+            </div>
+          </div>
+
+
+          <!-- /row -->
+
+
+
+
+
+
+          <div class="col-xl-8 col-lg-12">
+            <div class="card card-bitcoin">
+              <div class="card-minimal-two">
+                <div class="card-header">
+                  <h4 class="card-title mb-0">&nbsp</h4>
+                  <div class="">
+                    <nav class="nav nav-pills">
+                      <a class="nav-link active" data-bs-toggle="tab" href="#tab7">BTH</a>
+                      <a class="nav-link" data-bs-toggle="tab" href="#tab8">ETH</a>
+                      <a class="nav-link" data-bs-toggle="tab" href="#tab9">LTC</a>
+                      <a class="nav-link" data-bs-toggle="tab" href="#tab10">DOGE</a>
+                      <a class="nav-link" data-bs-toggle="tab" href="#tab11">BCH</a>
+                    </nav>
+
+                  </div>
+                  <!-- card-header-right -->
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="main-profile-body p-0">
+                  <div class="row row-sm">
+                    <div class="col-12">
+                      <div class="panel-body tabs-menu-body p-0 border-0">
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="tab7">
+
+                            <div class="media">
+                              <div class="media-icon"><img src="assets/img/crypto-currencies/round-icons/btc.png" alt="BCH" class="float-end text-muted" width="6%"></div>
+                              <div class="media-body">
+                                <div class="row row-sm">
+                                  <div class="col">
+                                    <label>Symbol</label>
+                                    <p>BTC</p>
+                                  </div>
+                                  <div class="col-3">
+                                    <label>Total Balance</label>
+                                    <p>0.003 BTC</p>
+                                  </div>
+                                  <div class="col">
+                                    <label>Total Balance (USD)</label>
+                                    <p>$4,253.49</p>
+                                  </div>
+                                  <div class="col">
+                                    <label>Profit</label>
+                                    <p>0.024 BTC</p>
+                                  </div>
+                                  <div class="col">
+                                    <label>Profit (USD)</label>
+                                    <p>$179.12B</p>
+                                  </div>
+                                </div>
+                                <!-- row -->
+                              </div>
+                            </div>
+                            <!-- media-body -->
+                            <div class="flot-wrapper flot-wrapper-height">
+                              <!-- TradingView Widget BEGIN -->
+                              <div class="tradingview-widget-container">
+                                <div class="tradingview-widget-container__widget"></div>
+                                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BTCUSD/?exchange=BITSTAMP" rel="noopener" target="_blank"><span class="blue-text">BTCUSD Rates</span></a> by TradingView</div>
+                                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                                  {
+                                    "symbol": "BITSTAMP:BTCUSD",
+                                    "width": "100%",
+                                    "height": "100%",
+                                    "locale": "en",
+                                    "dateRange": "12M",
+                                    "colorTheme": "dark",
+                                    "trendLineColor": "rgba(41, 98, 255, 1)",
+                                    "underLineColor": "rgba(41, 98, 255, 0.3)",
+                                    "underLineBottomColor": "rgba(41, 98, 255, 0)",
+                                    "isTransparent": true,
+                                    "autosize": true,
+                                    "largeChartUrl": ""
+                                  }
+                                </script>
+                              </div>
+                              <!-- TradingView Widget END -->
+                            </div>
+
+                          </div>
+                          <div class="tab-pane" id="tab8">
+                            <div class="media">
+                              <div class="media-icon"><img src="assets/img/crypto-currencies/round-icons/eth.png" alt="BCH" class="float-end text-muted" width="6%"></div>
+                              <div class="media-body">
+                                <div class="row row-sm">
+                                  <div class="col">
+                                    <label>Symbol</label>
+                                    <p>ETH</p>
+                                  </div>
+                                  <div class="col-3">
+                                    <label>Total Balance</label>
+                                    <p>0.003 ETH</p>
+                                  </div>
+                                  <div class="col">
+                                    <label>Total Balance (USD)</label>
+                                    <p>$4,253.49</p>
+                                  </div>
+                                  <div class="col">
+                                    <label>Profit</label>
+                                    <p>0.024 ETH</p>
+                                  </div>
+                                  <div class="col">
+                                    <label>Profit (USD)</label>
+                                    <p>$179.12B</p>
+                                  </div>
+                                </div>
+                                <!-- row -->
+                              </div>
+                            </div>
+                            <!-- media-body -->
+                            <div class="flot-wrapper flot-wrapper-height">
+                              <!-- TradingView Widget BEGIN -->
+                              <div class="tradingview-widget-container">
+                                <div class="tradingview-widget-container__widget"></div>
+                                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/ETHUSD/?exchange=BITSTAMP" rel="noopener" target="_blank"><span class="blue-text">ETHUSD Rates</span></a> by TradingView</div>
+                                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                                  {
+                                    "symbol": "BITSTAMP:ETHUSD",
+                                    "width": "100%",
+                                    "height": "100%",
+                                    "locale": "en",
+                                    "dateRange": "12M",
+                                    "colorTheme": "dark",
+                                    "trendLineColor": "rgba(41, 98, 255, 1)",
+                                    "underLineColor": "rgba(41, 98, 255, 0.3)",
+                                    "underLineBottomColor": "rgba(41, 98, 255, 0)",
+                                    "isTransparent": true,
+                                    "autosize": true,
+                                    "largeChartUrl": ""
+                                  }
+                                </script>
+                              </div>
+                              <!-- TradingView Widget END -->
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="tab9">
+                            <div class="media">
+                              <div class="media-icon"><img src="assets/img/crypto-currencies/round-icons/ltc.png" alt="BCH" class="float-end text-muted" width="6%"></div>
+                              <div class="media-body">
+                                <div class="row row-sm">
+                                  <div class="col">
+                                    <label>Symbol</label>
+                                    <p>LTC</p>
+                                  </div>
+                                  <div class="col-3">
+                                    <label>Total Balance</label>
+                                    <p>0.003 LTC</p>
+                                  </div>
+                                  <div class="col">
+                                    <label>Total Balance (USD)</label>
+                                    <p>$4,253.49</p>
+                                  </div>
+                                  <div class="col">
+                                    <label>Profit</label>
+                                    <p>0.024 LTC</p>
+                                  </div>
+                                  <div class="col">
+                                    <label>Profit (USD)</label>
+                                    <p>$179.12B</p>
+                                  </div>
+                                </div>
+                                <!-- row -->
+                              </div>
+                            </div>
+                            <!-- media-body -->
+                            <div class="flot-wrapper flot-wrapper-height">
+                              <!-- TradingView Widget BEGIN -->
+                              <div class="tradingview-widget-container">
+                                <div class="tradingview-widget-container__widget"></div>
+                                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/LTCUSD/?exchange=COINBASE" rel="noopener" target="_blank"><span class="blue-text">LTCUSD Rates</span></a> by TradingView</div>
+                                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                                  {
+                                    "symbol": "COINBASE:LTCUSD",
+                                    "width": "100%",
+                                    "height": "100%",
+                                    "locale": "en",
+                                    "dateRange": "12M",
+                                    "colorTheme": "dark",
+                                    "trendLineColor": "rgba(41, 98, 255, 1)",
+                                    "underLineColor": "rgba(41, 98, 255, 0.3)",
+                                    "underLineBottomColor": "rgba(41, 98, 255, 0)",
+                                    "isTransparent": true,
+                                    "autosize": true,
+                                    "largeChartUrl": ""
+                                  }
+                                </script>
+                              </div>
+                              <!-- TradingView Widget END -->
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="tab10">
+                            <div class="media">
+                              <div class="media-icon"><img src="assets/img/crypto-currencies/round-icons/doge.png" alt="BCH" class="float-end text-muted" width="6%"></div>
+                              <div class="media-body">
+                                <div class="row row-sm">
+                                  <div class="col">
+                                    <label>Symbol</label>
+                                    <p>DOGE</p>
+                                  </div>
+                                  <div class="col-3">
+                                    <label>Total Balance</label>
+                                    <p>0.003 DOGE</p>
+                                  </div>
+                                  <div class="col">
+                                    <label>Total Balance (USD)</label>
+                                    <p>$4,253.49</p>
+                                  </div>
+                                  <div class="col">
+                                    <label>Profit</label>
+                                    <p>0.024 DOGE</p>
+                                  </div>
+                                  <div class="col">
+                                    <label>Profit (USD)</label>
+                                    <p>$179.12B</p>
+                                  </div>
+                                </div>
+                                <!-- row -->
+                              </div>
+                            </div>
+                            <!-- media-body -->
+                            <div class="flot-wrapper flot-wrapper-height">
+                              <!-- TradingView Widget BEGIN -->
+                              <div class="tradingview-widget-container">
+                                <div class="tradingview-widget-container__widget"></div>
+                                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/DOGEUSD/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">DOGEUSD Rates</span></a> by TradingView</div>
+                                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                                  {
+                                    "symbol": "BINANCE:DOGEUSD",
+                                    "width": "100%",
+                                    "height": "100%",
+                                    "locale": "en",
+                                    "dateRange": "12M",
+                                    "colorTheme": "dark",
+                                    "trendLineColor": "rgba(41, 98, 255, 1)",
+                                    "underLineColor": "rgba(41, 98, 255, 0.3)",
+                                    "underLineBottomColor": "rgba(41, 98, 255, 0)",
+                                    "isTransparent": true,
+                                    "autosize": true,
+                                    "largeChartUrl": ""
+                                  }
+                                </script>
+                              </div>
+                              <!-- TradingView Widget END -->
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="tab11">
+                            <div class="media">
+                              <div class="media-icon"><img src="assets/img/crypto-currencies/round-icons/bch.png" alt="BCH" class="float-end text-muted" width="6%"></div>
+                              <div class="media-body">
+                                <div class="row row-sm">
+                                  <div class="col">
+                                    <label>Symbol</label>
+                                    <p>BCH</p>
+                                  </div>
+                                  <div class="col-3">
+                                    <label>Total Balance</label>
+                                    <p>0.003 BCH</p>
+                                  </div>
+                                  <div class="col">
+                                    <label>Total Balance (USD)</label>
+                                    <p>$4,253.49</p>
+                                  </div>
+                                  <div class="col">
+                                    <label>Profit</label>
+                                    <p>0.024 BCH</p>
+                                  </div>
+                                  <div class="col">
+                                    <label>Profit (USD)</label>
+                                    <p>$179.12B</p>
+                                  </div>
+                                </div>
+                                <!-- row -->
+                              </div>
+                            </div>
+                            <!-- media-body -->
+                            <div class="flot-wrapper flot-wrapper-height">
+                              <!-- TradingView Widget BEGIN -->
+                              <div class="tradingview-widget-container">
+                                <div class="tradingview-widget-container__widget"></div>
+                                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BCHUSD/?exchange=BITTREX" rel="noopener" target="_blank"><span class="blue-text">BCHUSD Rates</span></a> by TradingView</div>
+                                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                                  {
+                                    "symbol": "BITTREX:BCHUSD",
+                                    "width": "100%",
+                                    "height": "100%",
+                                    "locale": "en",
+                                    "dateRange": "12M",
+                                    "colorTheme": "dark",
+                                    "trendLineColor": "rgba(41, 98, 255, 1)",
+                                    "underLineColor": "rgba(41, 98, 255, 0.3)",
+                                    "underLineBottomColor": "rgba(41, 98, 255, 0)",
+                                    "isTransparent": true,
+                                    "autosize": true,
+                                    "largeChartUrl": ""
+                                  }
+                                </script>
+                              </div>
+                              <!-- TradingView Widget END -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- main-profile-body -->
+
+              </div>
+
+
+
+            </div>
+          </div>
+
+
+
+        </div>
+        <!-- /row  -->
+
+        <div class="row row-mg-bottom">
+          <div class="col-md-12">
+            <div class="card overflow-hidden">
+              <div class="card-body">
+                <div class="">
+                  <div class="d-flex justify-content-between">
+                    <h4 class="card-title mg-b-10" id="my-contracts">
+                      My Contracts
+                    </h4>
+                  </div>
+                  <p class="tx-12 text-muted mb-2">
+                    You can view all your active investments and recent transactions here.
+                  </p>
+                </div>
+                <div class="table-responsive market-values">
+                  <table
+                    class="table table-bordered table-hover table-striped text-nowrap mb-0 tx-13"
+                  >
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Icon</th>
+                        <th>Amount</th>
+                        <th>% 24h</th>
+                        <th>Total Profit</th>
+                        <th>Plan</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-bottom">
+                        <td>Ethereum</td>
+                        <td><i class="cf cf-eth tx-22"></i></td>
+                        <td>$966.61</td>
+                        <td class="text-red">-6%</td>
+                        <td class="text-start">$95,270,125,036</td>
+                        <td>22.62% / 29</td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-success"
+                            >Active</a
+                          >
+                        </td>
+                      </tr>
+                      <tr class="border-bottom">
+                        <td>Bitcoin</td>
+                        <td><i class="cf cf-btc tx-22 text-orange"></i></td>
+                        <td>$10513.00</td>
+                        <td class="text-red">-7%</td>
+                        <td class="text-start">$179,470,305,923</td>
+                        <td>8.11% / 57</td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-success"
+                            >Active</a
+                          >
+                        </td>
+                      </tr>
+                      <tr class="border-bottom">
+                        <td>NEM</td>
+                        <td><i class="cf cf-xem tx-20 text-teal"></i></td>
+                        <td>$1547.00</td>
+                        <td class="text-red">-11%</td>
+                        <td class="text-start">$26,720,210,956</td>
+                        <td>21.30% / 6</td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-success"
+                            >Active</a
+                          >
+                        </td>
+                      </tr>
+                      <tr class="border-bottom">
+                        <td>Ripple</td>
+                        <td><i class="cf cf-xrp tx-22 text-primary"></i></td>
+                        <td>$1.2029</td>
+                        <td class="text-red">-11%</td>
+                        <td class="text-start">$47,649,145,657</td>
+                        <td>10.85% / 53</td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-success"
+                            >Active</a
+                          >
+                        </td>
+                      </tr>
+                      <tr class="border-bottom">
+                        <td>Litecoin</td>
+                        <td><i class="cf cf-ltc tx-20 text-muted"></i></td>
+                        <td>$173.86</td>
+                        <td class="text-red">-7%</td>
+                        <td class="text-start">$9,670,920,267</td>
+                        <td>6.87% / 57</td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-success"
+                            >Active</a
+                          >
+                        </td>
+                      </tr>
+                      <tr class="border-bottom">
+                        <td>Dash</td>
+                        <td><i class="cf cf-dash tx-22 text-purple"></i></td>
+                        <td>$0.935049</td>
+                        <td class="text-red">-11%</td>
+                        <td class="text-start">$8,415,440,999</td>
+                        <td>26.99% / 33</td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-success"
+                            >Active</a
+                          >
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /conatiner -->
+    </div>
+    <!-- /main-content -->
+
+    <!-- Footer opened -->
+    <div class="main-footer">
+      <div class="container-fluid ht-100p">
+        <span>Copyright © 2015 <a href="#">Mirror Trading</a> All rights
+          reserved.</span>
+      </div>
+    </div>
+    <!-- Footer closed -->
+  </div>
+  <!--end  Page -->
+
+  <!-- Back-to-top -->
+  <a href="#top" id="back-to-top"><i class="la la-chevron-up"></i></a>
+
+  <!-- JQuery min js -->
+  <script src="assets/plugins/jquery/jquery.min.js"></script>
+
+  <!-- Bootstrap Bundle js -->
+  <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
+  <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Datepicker js -->
+  <script src="assets/plugins/jquery-ui/ui/widgets/datepicker.js"></script>
+
+  <!-- Moment js -->
+  <script src="assets/plugins/moment/moment.js"></script>
+
+  <!--Chart bundle min js -->
+  <script src="assets/plugins/chart.js/Chart.bundle.min.js"></script>
+  <script src="assets/plugins/raphael/raphael.min.js"></script>
+  <script src="assets/plugins/peity/jquery.peity.min.js"></script>
+
+  <!-- JQuery sparkline js -->
+  <script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+  <!-- Sampledata js -->
+  <script src="assets/js/chart.flot.sampledata.js"></script>
+
+  <!-- Perfect-scrollbar js -->
+  <script src="assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script src="assets/plugins/perfect-scrollbar/p-scroll.js"></script>
+  <script src="assets/plugins/perfect-scrollbar/p-scroll-1.js"></script>
+
+  <!-- Internal  Flot js-->
+  <script src="assets/plugins/jquery.flot/jquery.flot.js"></script>
+  <script src="assets/plugins/jquery.flot/jquery.flot.pie.js"></script>
+  <script src="assets/plugins/jquery.flot/jquery.flot.categories.js"></script>
+  <script src="assets/plugins/jquery.flot/jquery.flot.resize.js"></script>
+  <script src="assets/js/dashboard.sampledata.js"></script>
+  <script src="assets/js/chart.flot.sampledata.js"></script>
+
+  <!-- Owl Carousel js-->
+  <script src="assets/plugins/owl-carousel/owl.carousel.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+
+  <!-- Eva-icons js -->
+  <script src="assets/js/eva-icons.min.js"></script>
+
+  <!-- Sidemenu js -->
+  <script src="assets/plugins/side-menu/sidemenu.js"></script>
+
+  <!-- right-sidebar js -->
+  <script src="assets/plugins/sidebar/sidebar.js"></script>
+  <script src="assets/plugins/sidebar/sidebar-custom.js"></script>
+
+  <!-- Internal Nice-select js-->
+  <script src="assets/plugins/jquery-nice-select/js/jquery.nice-select.js"></script>
+  <script src="assets/plugins/jquery-nice-select/js/nice-select.js"></script>
+
+  <!-- Sticky js -->
+  <script src="assets/js/sticky.js"></script>
+
+  <!-- index js -->
+  <script src="assets/js/dashboard.js"></script>
+
+  <!-- Color Theme js -->
+  <script src="assets/js/themeColors.js"></script>
+
+  <!-- custom js -->
+  <script src="assets/js/custom.js"></script>
+
+  <!-- Custom-switcher js -->
+  <script src="assets/js/custom-switcher.js"></script>
+</body>
+
+</html>
